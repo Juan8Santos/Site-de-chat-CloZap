@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastrar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="abaHome">
+      <button class="buttonHome" onclick="home()">
+        <strong>Home</strong> <i class="fa-solid fa-house"></i>
+      </button>
+    </div>
+    <header>
+      <form>
+        <label class="labelNome">Nome</label><br />
+        <input type="text" class="inputNome" /><br /><br />
+        <label class="labelEmail">E-mail</label><br />
+        <input type="email" class="inputEmail" /><br /><br />
+        <label class="labelSenha">Senha</label><br />
+        <input type="password" class="inputSenha" /><br /><br />
+        <label class="labelConfirmarSenha">Confirmar Senha</label><br />
+        <input type="password" class="inputConfirmarSenha" /><br /><br />
+        <input type="button" value="Cadastrar" class="buttonCadastrar" onclick="cadastrar()">
+          
+      </input>
+      </form>
+      <div class="divJapossuiConta">
+        <p><strong>Já possui conta ?</strong></p>
+        <button class="buttonContas" onclick="telaContas()">
+          <strong>Contas</strong>
+        </button>
+      </div>
+    </header>
+    <script src="cadastrar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.abaHome {
+  height: 73px;
+  width: 178px;
+  background: rgba(255, 255, 255, 0.541);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: absolute;
+  top: 27px;
+  left: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonHome {
+  height: 55px;
+  width: 158px;
+  background: linear-gradient(to right, #b300b3, #4902fa);
+  border: 0;
+  border-radius: 100px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+body {
+  background-image: url("freepik__candid-image-photography-natural-textures-highly-r__48627.jpeg");
+  background-size: cover;
+  background-repeat: round;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 600px;
+  background: rgba(255, 255, 255, 0.541);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1;
+  position: absolute;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menuContas {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.menuTodasAsContas {
+  display: none;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.conta {
+  display: flex;
+  gap: 20px;
+  margin-top: 28px;
+  width: 100%;
+  border-bottom: 3px solid #5402f3;
+}
+
+.conta p {
+  margin-bottom: 28px;
+  color: #5402f3;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.conta i {
+  margin-left: 15px;
+  font-size: 28px;
+  color: white;
+}
+
+.icone {
+  height: 54px;
+  width: 52px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #b300b3, #4902fa);
+  margin-top: -16px;
+  padding-top: 12px;
+  padding-right: 54px;
+}
+
+.menuVerMais {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.menuVerMais p {
+  color: #5402f3;
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+.buttonVerMais {
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #b300b3, #4902fa);
+  border: 0;
+  font-size: 26px;
+  color: white;
+  margin-left: 75px;
+  cursor: pointer;
+}
+
+.menuVerMenos {
+  display: none;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 15px;
+  gap: 15px;
+}
+
+.menuVerMenos p {
+  color: #5402f3;
+  font-size: 18px;
+  margin-top: 16px;
+}
+
+.buttonVerMenos {
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #b300b3, #4902fa);
+  border: 0;
+  font-size: 26px;
+  color: white;
+  margin-left: 75px;
+  cursor: pointer;
+}
+
+.menuNaoPosuiConta {
+  margin-right: 70px;
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuNaoPosuiConta p {
+  color: #5402f3;
+  font-size: 18px;
+  margin-top: 80px;
+}
+
+.buttonTelaCadastrar {
+  height: 73px;
+  width: 178px;
+  background: linear-gradient(to right, #b300b3, #4902fa);
+  border: 0;
+  border-radius: 100px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 40px;
+  margin-top: 52px;
+}
+
+.buttonEntrar {
+  height: 54px;
+  width: 108px;
+  background: linear-gradient(to right, #b300b3, #4902fa);
+  border: 0;
+  border-radius: 100px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  margin-top: -17px;
+  position: absolute;
+  right: 70px;
+}
+
+.senha {
+  display: none;
+}

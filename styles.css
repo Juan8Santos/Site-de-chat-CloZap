@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6ff;
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  align-items: center;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  background-image: url("freepik__expand__48017.png");
+  width: 30%;
+  background-size: cover;
+  background-repeat: round;
+  height: 100vh;
+  animation: slideIn 2s ease-out forwards;
+}
+
+h1 {
+  background: linear-gradient(to right, #b300b3, #4902fa);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 64px;
+}
+
+.divHeaderContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 170px;
+  animation: slideInText 2s ease-out forwards;
+}
+
+.bemVindo {
+  font-size: 96px;
+  margin-bottom: -16px;
+}
+
+.buttonCadastrar {
+  margin-top: 48px;
+  height: 90px;
+  width: 195px;
+  background: linear-gradient(to right, #b300b3, #4902fa);
+  border: 0;
+  border-radius: 100px;
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.buttonContas {
+  position: absolute;
+  bottom: 0;
+  left: 236px;
+  cursor: pointer;
+  height: 90px;
+  width: 195px;
+  background: linear-gradient(to right, #b300b3, #4902fa);
+  border: 0;
+  border-radius: 100px;
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 24px;
+  color: white;
+}
+
+.buttomFundoContas {
+  background-color: #f6f6ff;
+  height: 70px;
+  width: 175px;
+  border-radius: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 246px;
+  cursor: pointer;
+  border: 0;
+}
+
+.buttomTextoContas {
+  height: 70px;
+  width: 175px;
+  position: absolute;
+  bottom: 10px;
+  left: 246px;
+  border: 0;
+  background: linear-gradient(to right, #b300b3, #4902fa);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInText {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
