@@ -87,12 +87,6 @@ header {
   font-weight: bold;
 }
 
-.conta i {
-  margin-left: 15px;
-  font-size: 28px;
-  color: white;
-}
-
 .icone {
   height: 54px;
   width: 52px;
@@ -101,6 +95,14 @@ header {
   margin-top: -16px;
   padding-top: 12px;
   padding-right: 54px;
+}
+
+.icone div {
+  margin-left: 19px;
+  margin-top: 3px;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .menuVerMais {

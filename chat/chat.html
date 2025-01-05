@@ -11,16 +11,31 @@
   </head>
   <body>
     <main>
-      <section class="sectionPerfil"></section>
+      <section class="sectionPerfil">
+        <div class="headerPerfil">
+          <div class="iconePerfil"><p class="iconePerfilP"></p></div>
+          <p class="nomeUsuario"></p>
+          <input type="button" class="buttonSair" value="Sair" onclick="sair()"></input>
+        </div>
+        <div class="grupoPerfil">
+           <div class="iconePerfil"><i class="fa-regular fa-user"></i></div>
+          <p class="nomeGrupoPerfil">Grupo</p>
+        </div>
+      </section>
       <section class="sectionChat">
         <div class="headerChat">
           <div class="icone"><i class="fa-regular fa-user"></i></div>
-          <p class="nomeUsuario">Grupo</p>
+          <p class="nomeGrupo">Grupo</p>
         </div>
         <div class="conversasChat">
         </div>
+        <form>
+          <input type="text" class="inputMensagem" placeholder="Mensagem"></input>
+          <input type="button" class="buttonEnviar" onclick="enviar()" value="Enviar"></input>
+        </form>
       </section>
     </main>
     <script src="chat.js"></script>
   </body>
 </html>
+

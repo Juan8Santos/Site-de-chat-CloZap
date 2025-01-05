@@ -28,7 +28,7 @@ function carregarContas() {
     if (contador < 5) {
       menuContas.innerHTML += `
         <div class="conta">
-          <div class="icone"><i class="fa-regular fa-user"></i></div>
+          <div class="icone"><div>${item.regNome[0].toUpperCase()}</div></div>
           <p class="nomeUsuario">${item.regNome}</p>
           <button class="buttonEntrar">
             <strong>Entrar</strong>
@@ -43,7 +43,7 @@ function carregarContas() {
   contas.forEach((item) => {
     menuTodasAsContas.innerHTML += `
         <div class="conta">
-          <div class="icone"><i class="fa-regular fa-user"></i></div>
+          <div class="icone"><div>${item.regNome[0].toUpperCase()}</div></div>
           <p class="nomeUsuario">${item.regNome}</p>
           <button class="buttonEntrar">
             <strong>Entrar</strong>
@@ -75,13 +75,28 @@ function entrar(e) {
     informacoesDaConta.querySelector(".nomeUsuario").textContent;
   const senhaUsuario = informacoesDaConta.querySelector(".senha").textContent;
 
-  let informacoesUsuario = {
-    nome: nomeUsuario,
-    senha: senhaUsuario,
-  };
+  class User {
+    constructor(id, name, password, nameInitial) {
+      this.id = id;
+      this.name = name;
+      this.password = password;
+      this.nameInitial = nameInitial;
+    }
+  }
+
+  let token = Math.random().toString(16).substring(2);
+
+  const usuario = new User(
+    token,
+    nomeUsuario,
+    senhaUsuario,
+    nomeUsuario[0].toUpperCase()
+  );
+
+  let arrayUsuario = Object.values(usuario);
 
   let usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado") || "[]");
-  usuarioLogado.push(informacoesUsuario);
+  usuarioLogado.push(arrayUsuario);
   localStorage.setItem("usuarioLogado", JSON.stringify(usuarioLogado));
 
   window.location.href = "https://fvc7gh.csb.app/login/login.html";

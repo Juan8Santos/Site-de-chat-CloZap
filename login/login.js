@@ -17,14 +17,14 @@ function telaContas() {
 }
 
 function carregarPagina() {
-  let logado = {};
+  let logado = [];
   logado = JSON.parse(localStorage.getItem("usuarioLogado"));
   logado.forEach((item) => {
     header.innerHTML = `
 
     <div class="conta">
-    <div class="icone"><i class="fa-regular fa-user"></i></div>
-    <p class="nomeUsuario">${item.nome}</p>
+    <div class="icone"><p>${item[3]}</p></div>
+    <p class="nomeUsuario">${item[1]}</p>
   </div>
   <form>
     <label class="labelSenha">Senha</label><br />
@@ -53,18 +53,16 @@ const inputSenha = document.querySelector(".inputSenha");
 const labelSenha = document.querySelector(".labelSenha");
 
 function entrar() {
-  let usuarioLogado = {};
+  let usuarioLogado = [];
   usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
 
   usuarioLogado.forEach((item) => {
-    if (inputSenha.value == item.senha) {
+    if (inputSenha.value == item[2]) {
       labelSenha.innerHTML = "Senha";
       labelSenha.setAttribute("style", "color: #02db02");
       inputSenha.setAttribute("style", "border-bottom: 3px solid #02db02");
 
-      setTimeout(() => {
-        window.location.href = "https://fvc7gh.csb.app/chat/chat.html";
-      }, 300);
+      window.location.href = `https://fvc7gh.csb.app/chat/chat.html?id=${item[0]}`;
     } else {
       balancarElemento();
       labelSenha.innerHTML = "Senha *A senha está incorreta!";
